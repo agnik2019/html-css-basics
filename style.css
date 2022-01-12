@@ -91,3 +91,112 @@ body{
     font-style: 20px;
     margin-bottom: 40px;
 }
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+.content-container{
+    margin-left: 50px;
+}
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+}
+.featured-title{
+    width: 200px;
+}
+.featured-desc{
+    width: 500px;
+    color:lightgrey;
+    margin:30px 0;
+}
+.featured-button{
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    font-weight: bold;
+}
+.movie-list-container{
+    padding:20px;
+}
+.movie-list-wrapper{
+    position: relative;
+
+}
+.movie-list{
+    display: flex;
+    height: 300px;
+    align-items: center;
+}
+.movie-list-item{
+    margin-right: 30px;
+    transition: all 1s ease-in-out;
+    position: relative;
+}
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin:0 30px;
+    opacity: 0.5;
+}
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-ite-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+.movie-list-item-img{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0; 
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-ite-desc{
+    background-color: #333;
+     padding:  10px;
+    font-size: 14px;
+    position: absolute; 
+    top: 30%;
+    left: 50px;
+    width: 230px; 
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+.movie-list-item-button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius:10px;
+    outline:none;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    bottom:20px;
+    left:50px;
+    margin-top: 8px;
+    opacity: 0;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: .5;
+    cursor: pointer;
+}
